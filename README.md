@@ -18,7 +18,7 @@ To get started with Nexcent, follow these simple steps:
 
 1. **Clone the Repository:**
 
-   git clone https://github.com/Anzi15/nexcent.git
+   git clone (https://github.com/impriyanshu9/Programming-Pathshala-Assignment.git)
 
 
 2. **Navigate to the Project Directory:**
@@ -32,10 +32,6 @@ To get started with Nexcent, follow these simple steps:
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to Nexcent, please follow our Contribution Guidelines to ensure a smooth collaboration process.
-
-## Issues and Bug Reports
-
-If you encounter any issues or would like to report a bug, please use our [Issue Tracker](https://github.com/Anzi15/nexcent/issues) to submit detailed information. We appreciate your feedback!
 
 ## License
 
