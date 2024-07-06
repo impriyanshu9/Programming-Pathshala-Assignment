@@ -1,103 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- title and description -->
-        <title>Home | Nexcent</title>
-        <meta name="description" content="Sell more with the help of experts, Nexcent where your business meet experts that sky-rockets your sales.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title and description -->
+    <title>Home | Nexcent</title>
+    <meta name="description" content="Sell more with the help of experts, Nexcent where your business meet experts that sky-rockets your sales.">
     
-        <!-- meta data -->
-        <link rel="shortcut icon" href="src/assets/favicon.png" type="image/x-icon">
-    
-        <!-- css -->
-        <link rel="stylesheet" href="src/css/output.css">
-    
-        <!-- js -->
-        <script defer src="src/js/index.js"></script>
-        <script defer src="src/js/observer.js"></script>
-    
-        <!-- Add the theme toggle script -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const toggleThemeButton = document.getElementById('toggle-theme');
-                const htmlElement = document.documentElement;
-    
-                toggleThemeButton.addEventListener('click', () => {
-                    if (htmlElement.classList.contains('dark')) {
-                        htmlElement.classList.remove('dark');
-                        localStorage.setItem('theme', 'light');
-                    } else {
-                        htmlElement.classList.add('dark');
-                        localStorage.setItem('theme', 'dark');
-                    }
-                });
-    
-                // Apply theme on initial load
-                if (localStorage.getItem('theme') === 'dark') {
-                    htmlElement.classList.add('dark');
-                } else {
-                    htmlElement.classList.remove('dark');
-                }
-            });
-        </script>
-    </head>
-    <body class="max-w-screen overflow-x-hidden min-h-[100vh]">
-        <!-- header -->
-        <header class="bg-silver">
-            <!-- separate navbar for mobiles -->
-            <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s]">
-                <div class="nav-links md:flex items-center ">
-                    <ul class="w-full flex gap-9 font-normal flex-col items-center">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Feature">Feature</a></li>
-                        <li><a href="#testimonial">Testimonial</a></li>
-                    </ul>
-                </div>
-                <div class="nav-cta flex gap-4 w-full justify-center mt-4">
-                    <button id="toggle-theme" class="text-d_grey dark:text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text md:block">
-                        Toggle Theme
-                    </button>
-                    <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text md:block" href="/Contact/">Contact us</a>
-                </div>
+    <!-- meta data -->
+    <link rel="shortcut icon" href="src/assets/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/output.css">
+
+    <!-- js -->
+    <script defer src="src/js/index.js"></script>
+    <script defer src="src/js/observer.js"></script>
+
+
+</head>
+<body class="max-w-screen overflow-x-hidden min-h-[100vh]">
+    <!-- header -->
+    <header class="bg-silver">
+        <!-- seprate navbar for mobiles -->
+        <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s]">
+            <div class="nav-links  md:flex items-center ">
+                <ul class="w-full flex gap-9 font-normal flex-col items-center">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
             </div>
-            <!-- navbar -->
-            <nav class="flex lg:w-full justify-between p-7">
-                <!-- logo for branding -->
-                <div class="logo flex items-center">
-                    <a href="">
-                        <img src="src/assets/nexcent-logo-black.png" alt="nexcent-logo">
-                    </a>
-                </div>
-    
-                <!-- links for navigation -->
-                <div class="nav-links hidden md:flex items-center">
-                    <ul class="flex gap-9 font-normal">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Feature">Feature</a></li>
-                        <li><a href="#testimonial">Testimonial</a></li>
-                    </ul>
-                </div>
-    
-                <!-- call to action button and theme toggle button -->
-                <div class="nav-cta flex gap-4 items-center">
-                    <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="/Contact/">Contact us</a>
-                    <button id="toggle-theme" class="text-d_grey dark:text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text">
-                        Toggle Theme
-                    </button>
-                </div>
-    
-                <div class="responsive-hamburger-toggler md:hidden">
-                    <button id="nav-toggle-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-        </header>
+            <div class="nav-cta flex gap-4 w-full justify-center mt-4">
+                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/Contact/">Contact us</a>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="flex lg:w-full justify-between p-7">
+            <!-- logo for branding -->
+            <div class="logo flex items-center">
+                <a href="">
+                    <img src="src/assets/nexcent-logo-black.png" alt="nexcent-logo">
+                </a>
+            </div>
+
+            <!-- links for navigation -->
+            <div class="nav-links hidden  md:flex items-center ">
+                <ul class=" flex gap-9 font-normal ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+
+            <!-- call to action button -->
+            <div class="nav-cta flex gap-4 ">
+                <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="/Contact/">Contact us</a>
+            </div>
+
+
+            <div class="reponsive-hamburger-toggler md:hidden ">
+                <button id="nav-toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+    </header>
     
 
     <!-- hero section -->
